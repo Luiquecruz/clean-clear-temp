@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>About - Clean &amp; Clear</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="top-bar"></div>
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#top">
+              <img src="img/logo.png" alt="Logo">
+          </a>
+        </div> <!-- end navbar-header -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Innovate <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="innovate.html">Learn</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="innovate.html">Create</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="innovate.html">Teach</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+               <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            <li class="login" data-toggle="modal" data-target="#logModal"><a href="#">Login</a></li>
+            <li class="register" data-toggle="modal" data-target="#regModal"><a href="#">Register</a></li>
+          </ul>
+        </div> <!-- end navbar-collapse -->
+      </div> <!-- end container-fluid -->
+    </nav> <!-- end navbar -->
+    
+    <!-- login modal -->
+    <div class="modal fade" id="logModal" tabindex="-1" role="dialog" aria-labelledby="logModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="logModalLabel">Login</h4>
+          </div>
+          <div class="modal-body">
+            
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="logEmail" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="logEmail" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="logPass" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="logPass" placeholder="Password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Remember me
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end login modal -->
+    
+    <!-- register modal -->
+    <div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="regModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="regModalLabel">Register</h4>
+          </div>
+          <div class="modal-body">
+           
+            <form class="form-horizontal">
+             <div class="form-group">
+                <label for="regUsername" class="col-sm-2 control-label">Username</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="regUsername" placeholder="Username">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="regEmail" class="col-sm-2 control-label">Email*</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="regEmail" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="regPass" class="col-sm-2 control-label">Password*</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="regPass" placeholder="Password" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="regConfPass" class="col-sm-2 control-label">Confirm Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="regConfPass" placeholder="Retype your Password">
+                </div>
+              </div>
+            </form>
+            
+          </div>
+          <div class="modal-footer">
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end register modal -->
+    
+    <!-- Reference do back to top -->
+    <div id="top"><br></div>
+    
+    <div class="container">
+        <div class="row">
+           
+            <div class="inner-page col-md-8">
+                <div id="about" class="well">
+                    <h3>About Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus lacus, ullamcorper et scelerisque eleifend, porttitor consectetur risus. Duis consequat tortor quam, nec auctor magna lobortis quis. Vestibulum tincidunt volutpat nisi, vel sodales est vestibulum in. Maecenas porttitor, tellus sit amet ullamcorper mollis, arcu est dignissim odio, quis fringilla mauris lacus sit amet sapien. In posuere ac erat non sollicitudin. Maecenas ante nibh, imperdiet a nisl quis, semper rhoncus nisl. Phasellus porta adipiscing risus, sed pellentesque elit eleifend sed. Fusce scelerisque cursus sapien. Nullam feugiat sollicitudin diam, id tincidunt sem eleifend at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In aliquet scelerisque lectus nec imperdiet.</p>
+                    <hr>
+                    <h3>Teamwork</h3>
+                    <img src="img/teamwork.jpg" alt="Teamwork" />
+
+                    <!-- tabs -->
+                    <div>
+
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">What We do</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Meet The Team</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Investments</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Terms</a></li>
+                      </ul>
+
+                      <!-- Tab panes -->
+                      <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam eum ducimus ipsam autem distinctio nisi, minima esse. Consequuntur ea, a veritatis incidunt dolor suscipit eos doloremque ducimus quod enim delectus.</div>
+                        <div role="tabpanel" class="tab-pane" id="profile">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga at voluptas reprehenderit eius illo assumenda, magni ipsa ut ab. Fuga dolore eos illum mollitia odit iusto laboriosam tempora quia! Doloribus!</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quasi distinctio perspiciatis ratione atque exercitationem amet porro, esse repellendus laudantium consequuntur neque et, aspernatur repellat, mollitia. Itaque eum maiores, modi!</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptate quibusdam harum maxime voluptatibus cum asperiores velit, corrupti magnam enim quisquam assumenda similique officiis nemo sequi perferendis, accusantium amet esse?</div>
+                      </div>
+
+                    </div>
+                    <!-- end tabs -->
+                </div>
+            </div><!-- end inner-page -->
+           
+            <!-- Sidebar -->
+            <div class="col-md-4">
+               
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Purposes
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Last Projects
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Social Benefits
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="list-group margin-top">
+                  <a href="index.html" class="list-group-item">Home</a>
+                  <a href="about.html" class="list-group-item active">About</a>
+                  <a href="innovate.html" class="list-group-item">Innovate</a>
+                  <a href="blog.html" class="list-group-item">Blog</a>
+                  <a href="contact.html" class="list-group-item">Contact</a>
+                </div>
+                
+                <div class="list-group margin-top">
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, mollitia.</p>
+                  </a>
+                  <a href="#" class="list-group-item">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, mollitia.</p>
+                  </a>
+                  <a href="#" class="list-group-item ">
+                    <h4 class="list-group-item-heading">List group item heading</h4>
+                    <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, mollitia.</p>
+                  </a>
+                  
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+    
+    <footer>
+        Copyright &copy; 2017 Clean and Clear Template
+    </footer>
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>

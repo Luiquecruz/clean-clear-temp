@@ -1,0 +1,161 @@
+/* custom classes*/
+.margin-top {margin-top: 30px;}
+.top {margin-top: 30px;}
+.well {background: #fff;}
+/* --- */
+
+/*** Main Style ***/
+
+body {margin-top: 55px;}
+
+.top-bar {
+    height: 5px;
+    background-color: #ca2129;
+}
+
+.navbar {margin-bottom: 0;}
+
+.navbar li:hover {background: #e7e7e7;}
+
+.login a {
+    background: #2e98cc;
+    color: #fff !important;
+}
+
+.login a:hover {background: #ca2129 !important;}
+
+.register a {
+    background: #2e98cc;
+    color: #fff !important;
+}
+
+.register a:hover {background: #ca2129 !important;}
+
+.jumboltron {
+    background: url(../img/waterdrop.jpg) no-repeat 50% 0;
+    height: 350px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.jumboltron h1 {
+    font-size: 34px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.jumboltron [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+    overflow: auto;
+    height: 350px;
+}
+
+.jumboltron-content {color: #fff;}
+
+.bluebox {
+    padding: 0px 10px 50px 10px;
+    font-size: 120%;
+    color: #fff;
+    background: #2e98cc;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.bluebox .readmore {
+    position: absolute;
+    padding: 5px;
+    margin: 10px;
+    left: 15px;
+    bottom: 0px;
+    background: #2b8cbc;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.bluebox .readmore:hover {background: #20749d;}
+
+.redbox {
+    padding: 0px 10px 50px 10px;
+    font-size: 120%;
+    color: #fff;
+    background: #ca2129;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.redbox .readmore {
+    position: absolute;
+    padding: 5px;
+    margin: 10px;
+    left: 15px;
+    bottom: 0px;
+    background: #bf1e26;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.redbox .readmore:hover {background: #86161b;}
+
+.panel {margin-top: 30px;}
+
+.panel .panel-heading {
+    background: #2e98cc;
+    color: #fff;
+}
+
+.media {border-bottom: 1px solid #ccc;}
+
+.media:last-child {border: 0;}
+
+.media img {margin-bottom: 15px;}
+
+.media-body {
+    font-size: 115%;
+    padding-top: 20px;
+}
+
+.list-group .active {background: #ca2129;}
+
+.list-group .active:hover,
+.list-group .active:visited {background: #ca2129;}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+    background: #f4f4f4;
+}
+
+/*** About Page ***/
+
+.inner-page {margin-top: 30px;}
+
+.inner-page img {width: 100%;}
+
+.tab-pane {padding-top: 5px;}
+
+/*** Blog Page ***/
+
+#blog img {
+    width: 100%;
+    margin: 5px 0 15px 0;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#blog .readmore {
+    padding: 5px;
+    border-radius: 4px;
+    background: #2b8cbc;
+    color: #fff;
+    font-size: 120%;
+}
+
+#blog .readmore:hover {
+    background: #20749d;
+}
